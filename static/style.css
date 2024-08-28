@@ -1,0 +1,47 @@
+body  {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+form {
+    max-width: 500px;
+    margin:  0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type = "submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    width: 100%;
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 20px 0;
+    color: red;
+    text-align: center;
+    
+} 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Flask</title>
+    <link rel="stylesheet" href="{{url_for('static', filename ='style.css')}}">
+</head>
+<body>
+    <h1>Preencha o Formulário</h1>
+    <form method="POST" action="">
+
+        {{ formulario.hidden_tag() }}
+        
+        <div>
+            {{ formulario.nome.label }}<br>
+            {{ formulario.nome(size=32) }}<br>
+        </div>
+
+        <div>
+            {{ formulario.email.label }}<br>
+            {{ formulario.email(size=32) }}<br>
+        </div>
+
+        <div>
+            {{ formulario.idade.label }}<br>
+            {{ formulario.idade() }}<br>
+        </div>
+
+        <div>
+            {{ formulario.mensagem.label }}<br>
+            {{ formulario.mensagem() }}<br>
+        </div>
+
+        <div>
+            {{ formulario.enviar() }}
+        </div>
+
+    </form>
+</body>
+</html>
